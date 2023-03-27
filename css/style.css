@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    background: #d3fea9;
+    color: #000;
+}
+
+header{
+    padding: 32px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 40px;
+    color: #52734D;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#nova-tarefa-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#nova-tarefa-input{
+    flex: 1 1 0%;
+    background-color: #fafcb5;
+    padding: 16px;
+    border-radius: 16px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+#nova-tarefa-input::placeholder{
+    color: #52734D;
+}
+
+#nova-tarefa-submit{
+    color: #52734D;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#nova-tarefa-submit:hover{
+    opacity: 0.8;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 32px 16px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lista-tarefas{
+    padding: 16px;
+}
+
+.lista-tarefas h2{
+    font-size: 24px;
+    font-weight: 300;
+    color: #52734D;
+    margin-bottom: 16px;
+}
+
+#tarefas .tarefa{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcff9b;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+
+.tarefa .conteudo    {
+	flex: 1 1 0%;
+}
+
+
+.tarefa .conteudo .texto{
+    color: #000;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+
+.tarefa .acoes{
+    display: flex;
+    margin: 0 -8px;
+}
+
+.tarefa .acoes button{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.4;
+}
+
+.tarefa .acoes button:hover{
+    opacity: 0.8;
+}
+
+.tarefa .acoes .excluir{
+    color: rgb(253, 55, 55);
+}
